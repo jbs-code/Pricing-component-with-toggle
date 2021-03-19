@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing component with toggle</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img class="fondo-top" src="./images/bg-top.svg" alt="bg-top">
+        <img class="fondo-bottom" src="./images/bg-bottom.svg" alt="bg-bottom">
+
+        <h1 class="titulo">Our pricing</h1>
+        <div class="switch">
+            <h5>Annually</h5>
+            <label>
+                <input id="check" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <h5>Monthly</h5>
+        </div>
+
+        <main class="cards">
+            <article class="card card-white">
+                <h5 class="card-titulo">Basic</h5>
+                <div class="card-precio border-black">
+                    <h3>$</h3>
+                    <h1 id="basic"></h1>
+                </div>
+                <p class="card-p border-black">500 GB Storage</p>
+                <p class="card-p border-black">2 Users Allowed</p>
+                <p class="card-p border-black">Send up to 3GB</p>
+                <button class="btn btn-white">LEARN MORE</button>
+            </article>
+            
+            <article class="card card-purple">
+                <h5 class="card-titulo">Professional</h5>
+                <div class="card-precio border-white">
+                    <h3>$</h3>
+                    <h1 id="professional"></h1>
+                </div>
+                <p class="card-p border-white">1 TB Storage</p>
+                <p class="card-p border-white">5 Users Allowed</p>
+                <p class="card-p border-white">Send up to 10GB</p>
+                <button class="btn btn-purple">LEARN MORE</button>
+            </article>
+
+            <article class="card card-white">
+                <h5 class="card-titulo">Master</h5>
+                <div class="card-precio border-black">
+                    <h3>$</h3>
+                    <h1 id="master"></h1>
+                </div>
+                <p class="card-p border-black">2 TB Storage</p>
+                <p class="card-p border-black">10 Users Allowed</p>
+                <p class="card-p border-black">Send up to 20GB</p>
+                <button class="btn btn-white">LEARN MORE</button>
+            </article>
+        </main>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
